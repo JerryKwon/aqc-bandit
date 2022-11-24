@@ -43,15 +43,16 @@ https://www.kamp-ai.kr/front/dataset/AiDataDetail.jsp?AI_SEARCH=&page=1&DATASET_
 ## :open_file_folder: Directory configuration
 
 ```
+├── imgs: images for ipynb source files
 ├── aqc_bandit.yaml: Anaconda environment configuration file 
-├── moldset_labeled.csv: Datasets of injection modeling for labeled observation
-├── unlabeled_data.csv: Datasets of injection modeling for unlabeled observation
+├── (Download from link) moldset_labeled.csv: Datasets of injection modeling for labeled observation
+├── (Download from link) unlabeled_data.csv: Datasets of injection modeling for unlabeled observation
 ├── baseline_molding.ipynb: Source code of baseline implementation codes for learning and evaluation
 ├── bandit_molding.ipynb: Source code of proposed combined method codes for learning and evaluation
 ├── NN_cn7.h5: Trained NN model for CN7 data
 ├── NN_rg3.h5: Trained NN model for RG3 data
-├── list_launchers_cn7.pkl: Trained proposing(CMAB + tree) model for CN7 data
-├── list_launchers_rg3.pkl: Trained proposing(CMAB + tree) model for RG3 data
+├── (Download from link) list_launchers_cn7.pkl: Trained proposing(CMAB + tree) model for CN7 data
+├── (Download from link) list_launchers_rg3.pkl: Trained proposing(CMAB + tree) model for RG3 data
 └── README.md: Instructions of project
 ```
 
@@ -59,7 +60,11 @@ https://www.kamp-ai.kr/front/dataset/AiDataDetail.jsp?AI_SEARCH=&page=1&DATASET_
 
 ## :zap: How to run
 
-1. locate data(.csv) and source code(.ipynb) files in same directory
+1. Download supplementary material, data and trained proposed model by below link
+
+    https://drive.google.com/drive/folders/179jpaa5bSIgAWT64D8fmpEDsIXovEwiO?usp=sharing
+   
+2. Locate data(.csv) and source code(.ipynb) files in same directory
 
    * data(.csv)
      * moldset_labeled.csv
@@ -68,15 +73,15 @@ https://www.kamp-ai.kr/front/dataset/AiDataDetail.jsp?AI_SEARCH=&page=1&DATASET_
      * baseline_molding:  baseline implementation codes for learning and evaluation
      * bandit_molding: proposed combined method codes for learning and evaluation
 
-2. Create environment by importing anaconda environment configuration file(.yaml)
+3. Create environment by importing anaconda environment configuration file(.yaml)
 
    conda env create -f aqc_bandit.yaml
 
-3. Add kernel for created environment
+4. Add kernel for created environment
 
    python -m ipykernel install --user --name aqc_env --display-name "aqc_env"
 
-4. Run each entire source code(.ipynb) for baseline models and proposed method
+5. Run each entire source code(.ipynb) for baseline models and proposed method
 
    * baseline_molding.ipynb
      * Support Vector Machine Classifier(SVC)
