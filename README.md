@@ -49,6 +49,8 @@ https://www.kamp-ai.kr/front/dataset/AiDataDetail.jsp?AI_SEARCH=&page=1&DATASET_
 ├── (Download from link) unlabeled_data.csv: Datasets of injection modeling for unlabeled observation
 ├── baseline_molding.ipynb: Source code of baseline implementation codes for learning and evaluation
 ├── bandit_molding.ipynb: Source code of proposed combined method codes for learning and evaluation
+├── baseline_molding.html: HTML version to see source code of baseline implementation codes for learning and evaluation
+├── bandit_molding.html: HTML version to see source code of proposed combined method codes for learning and evaluation
 ├── NN_cn7.h5: Trained NN model for CN7 data
 ├── NN_rg3.h5: Trained NN model for RG3 data
 ├── (Download from link) list_launchers_cn7.pkl: Trained proposing(CMAB + tree) model for CN7 data
