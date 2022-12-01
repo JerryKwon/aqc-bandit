@@ -79,7 +79,7 @@ https://www.kamp-ai.kr/front/dataset/AiDataDetail.jsp?AI_SEARCH=&page=1&DATASET_
 
 4. Add kernel for created environment
 
-   python -m ipykernel install --user --name aqc_env --display-name "aqc_env"
+   python -m ipykernel install --user --name aqc_bandit --display-name "aqc_bandit"
 
 5. Run each entire source code(.ipynb) for baseline models and proposed method
 
@@ -96,11 +96,11 @@ https://www.kamp-ai.kr/front/dataset/AiDataDetail.jsp?AI_SEARCH=&page=1&DATASET_
 
     | Metric |      | CN7  |      |      | RG3 |      |
     | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-    |        | SVM | DNN | CMAB<br />(K=6, m=1) | SVM | DNN | CMAB<br />(K=4, m=3) |
-    | Accuracy | 0.98 | 0.98 | 0.79 | 0.98 | 0.98 | 0.98 |
-    | Precision | 0.00 | 0.00 | 0.07 | 0.00 | 0.00 | 0.0 |
+    |        | SVM | DNN | CMAB<br />(K=4, m=2) | SVM | DNN | CMAB<br />(K=3, m=4) |
+    | Accuracy | 0.98 | 0.98 | 0.80 | 0.98 | 0.98 | 0.98 |
+    | Precision | 0.00 | 0.00 | 0.08 | 0.00 | 0.00 | 0.0 |
     | Recall | 0.00 | 0.00 | 0.88 | 0.00 | 0.00 | 0.0 |
-    | Elapsed Time(s) | 0.01 | 659 | 430 | 0.01 | 632 | 219 |
+    | Elapsed Time(s) | 0.01 | 659 | 144 | 0.01 | 632 | 141 |
 
 * Confusion Matrices for data(CN7 | RG3) and models(SVM | DNN | CMAB)
 
@@ -122,9 +122,9 @@ https://www.kamp-ai.kr/front/dataset/AiDataDetail.jsp?AI_SEARCH=&page=1&DATASET_
   
     * CMAB
 
-        |      K=6, m=1      | (Prediction) True | (Prediction) False |
+        |      K=4, m=2      | (Prediction) True | (Prediction) False |
         | :----------------: | :---------------: | :----------------: |
-        | **(Actual) True**  |        331        |         89         |
+        | **(Actual) True**  |        334        |         86         |
         | **(Actual) False** |         1         |         7          |
   
   * RG3
@@ -145,7 +145,7 @@ https://www.kamp-ai.kr/front/dataset/AiDataDetail.jsp?AI_SEARCH=&page=1&DATASET_
     
     * CMAB
     
-      |      K=4, m=3      | (Prediction) True | (Prediction) False |
+      |      K=3, m=4      | (Prediction) True | (Prediction) False |
       | :----------------: | :---------------: | :----------------: |
       | **(Actual) True**  |        347        |         0          |
       | **(Actual) False** |         8         |         0          |
