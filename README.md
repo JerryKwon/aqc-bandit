@@ -4,6 +4,13 @@
 <div style="text-align: right"> AIGS 20215029 Youngin Kwon </div>
 
 
+
+It is also shared as github public repository 
+
+URL: https://github.com/JerryKwon/aqc-bandit
+
+
+
 ## Contents
 
 * [:triangular_flag_on_post: Objective](#\:triangular_flag_on_post\:-Objective)
@@ -44,6 +51,8 @@ https://www.kamp-ai.kr/front/dataset/AiDataDetail.jsp?AI_SEARCH=&page=1&DATASET_
 
 ```
 ├── imgs: images for ipynb source files
+├── README.md: Instructions of project
+├── Incremental_anomaly_detection_using_contextual_bandit_and_decision_tree.pdf: Research paper of project
 ├── aqc_bandit.yaml: Anaconda environment configuration file 
 ├── (Download from link) moldset_labeled.csv: Datasets of injection modeling for labeled observation
 ├── (Download from link) unlabeled_data.csv: Datasets of injection modeling for unlabeled observation
@@ -54,8 +63,7 @@ https://www.kamp-ai.kr/front/dataset/AiDataDetail.jsp?AI_SEARCH=&page=1&DATASET_
 ├── NN_cn7.h5: Trained NN model for CN7 data
 ├── NN_rg3.h5: Trained NN model for RG3 data
 ├── (Download from link) list_launchers_cn7.pkl: Trained proposing(CMAB + tree) model for CN7 data
-├── (Download from link) list_launchers_rg3.pkl: Trained proposing(CMAB + tree) model for RG3 data
-└── README.md: Instructions of project
+└── (Download from link) list_launchers_rg3.pkl: Trained proposing(CMAB + tree) model for RG3 data
 ```
 
 
@@ -156,7 +164,7 @@ https://www.kamp-ai.kr/front/dataset/AiDataDetail.jsp?AI_SEARCH=&page=1&DATASET_
 
 ## :checkered_flag: ​Conclusion
 
-In our paper, we refer the importance of incremental anomaly detection method for real industrial field where concept drift occurs by testing injection molding dataset. So, we propose LinUCB-based anomaly detection with incremental regression tree model. The proposed model implies efficient approach which spends much less elapsed time, although it does not stable by serveral iterations. There are further ways to develop this model by swapping newly generated node with existing nodes in train step and replacing FIMT-DD based tree learner with other tree models.
+In our paper, we refer the importance of incremental anomaly detection method for real industrial field where concept drift occurs by testing injection molding dataset. So, we propose LinUCB-based anomaly detection with incremental regression tree model. The proposed model implies suitable approach as real-time detection algorithm which spends much less time, although it does not stable by serveral iterations. There are further ways to develop this model by adding policy to swap leaf node when new node is generated at maximum amount of leaf nodes replace FIMT-DD tree learner with other tree models.   
 
 
 
