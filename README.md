@@ -51,6 +51,7 @@ https://www.kamp-ai.kr/front/dataset/AiDataDetail.jsp?AI_SEARCH=&page=1&DATASET_
 ├── imgs: images for ipynb source files
 ├── README.md: Instructions of project
 ├── Incremental_anomaly_detection_using_contextual_bandit_and_decision_tree.pdf: Research paper of project
+├── Incremental_anomaly_detection_using_contextual_bandit_and_decision_tree.zip: Latex soruce files for research paper of project
 ├── aqc_bandit.yaml: Anaconda environment configuration file 
 ├── (Download from link) moldset_labeled.csv: Datasets of injection modeling for labeled observation
 ├── (Download from link) unlabeled_data.csv: Datasets of injection modeling for unlabeled observation
