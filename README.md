@@ -3,8 +3,6 @@
 <div style="text-align: right"> AI53301 Fall 2022 Advanced Quality Control </div>
 <div style="text-align: right"> AIGS 20215029 Youngin Kwon </div>
 
-
-
 It is also shared as github public repository 
 
 URL: https://github.com/JerryKwon/aqc-bandit
